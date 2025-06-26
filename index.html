@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Salary Predictor</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>💼 Salary Predictor</h1>
+    <p>Enter your scores to get an estimated salary!</p>
+
+    <div class="form-group">
+      <label for="tenth">10th Score (%)</label>
+      <input type="number" id="tenth" min="0" max="100">
+
+      <label for="twelfth">12th Score (%)</label>
+      <input type="number" id="twelfth" min="0" max="100">
+
+      <label for="test">Test Score (out of 10)</label>
+      <input type="number" id="test" min="0" max="10">
+
+      <label for="interview">Interview Score (out of 10)</label>
+      <input type="number" id="interview" min="0" max="10">
+
+      <label for="experience">Experience (in years)</label>
+      <input type="number" id="experience" min="0" max="50">
+
+      <button onclick="predictSalary()">Predict Salary</button>
+    </div>
+
+    <div class="result" id="result"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
